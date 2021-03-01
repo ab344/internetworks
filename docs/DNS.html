@@ -1,10 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</body>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<div class="bg-light">
+    <title>Domain Name System</title>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">How the Internet Works</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            View More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="domain-icann.html">Domain Names and ICANN</a></li>
+            <li><a class="dropdown-item" href="ip-packets-routing.html">IP Addresses, Packets and Routing</a></li>
+            <li><a class="dropdown-item" href="DNS.html">DNS</a></li>
+            <li><a class="dropdown-item" href="HTTP-HTTPS.html">HTTP/HTTPS Protocols</a></li>
+            <li><a class="dropdown-item" href="W3C-HTML-CSS.html">W3C/HTML/CSS</a></li>
+          </ul>
+        </li>
+    </div>
+  </div>
+</nav>
+  </head>
+  <body>
+  <div class="container">
+    <h1>Domain Name System (DNS)</h1>
+     <p>The Domain Name System (DNS) translates human readable domain names to machine readable IP addresses.
+         This is a lot similar to a phone book mapping a persons's name to a phone number. When a web address
+         (URL) is typed into a browser, a DNS query is made to learn an IP address of a web server
+         associated with that name. For example www.amazon.com translates to 192.0.2.44.
+<p><i><b>How does your computer know which DNS server to use?</b></i></p>
+      <p>Usually, when you connect your home network, the modem or router that assigns your computer's
+          network address, also sends network configuration information to your computer. That
+          configuration included one or more DNS servers that the device should use when translating DNS names
+          to an IP address.
+     </p>
+<p>Below is a graphic explaining how domain name system servers work:</p>
+
+            <p><div class="card mb-3" style="max-width: 1500px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://thisdayintechhistory.com/wp-content/uploads/2013/12/how-dns-works-wm.png" width="370" height="300" class="rounded" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Here is a breakdown of DNS for www.amazon.com</h5>
+        <p class="card-text">
+          <li><u>amazon.com</u> is the domain name</p></li>
+          <p><li><u>www</u> is the host name</li></p>
+          <p><li>DNS resolution maps www.amazon.com into an IP address</li></p>
+          <p><li>To load a webpage, a conversion occurs between what the user types into the web browser
+          <p>(www.amazon.com) and an IP address required to locate the www.amazon.com website</li></p>
+      </div>
+    </div>
+  </div>
+</div></p>
+<p>DNS servers are connected in a distributed hierarchy. The DNS root zone level are known as root
+    servers. A root server receives a DNS query, which includes a domain name and
+responds by directing that request to a top-level domain (TLD) nameserver, based on the TLD of that
+domain (.com, .net, .org). A direct response requests for DNS records in the root zone by returning
+a list of authoritative TLD name servers that can resolve the initial DNS lookup request for an IP
+address of that domain name. </p>
+      <p><center>Below is an image that illustrates the different levels of the DNS hierarchy: </center></p>
+      <center><img src="https://www.mertakdut.com/images/blog/dns/dns-hierarchy.jpg" width="500" height="300" class="rounded" align="center" alt="..."></center>
+
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
